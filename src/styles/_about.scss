@@ -50,5 +50,12 @@
 }
 
 .icons {
-  color: $sec;
+  display: flex;
+  justify-content: center; // Center the icons within the div
+  gap: 10px;  // Add space between icons
+  
+  img, i {
+    max-width: 100%;  // Ensure icons or images don’t overflow their containers
+    height: auto;  // Maintain aspect ratio
+  }
 }
