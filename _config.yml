@@ -14,7 +14,7 @@ github_username:  brananharrison
 
 exclude: ['package.json', 'src' , 'node_modules']
 
-# Automatic SCSS processing
+# Automatic SCSS processings
 sass:
   style: compressed
   sass_dir: src/styles
