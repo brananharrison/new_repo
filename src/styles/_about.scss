@@ -1,46 +1,46 @@
 #about {
+  font-size: 120%;
+  
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
-}
-
-.user {
-  display: flex;
-  flex-wrap: wrap;  // Allow columns to wrap on smaller screens
-  justify-content: space-between;  // Distribute space evenly between columns
-  gap: 20px;  // Space between columns
+  svg {
+    width: 60px !important;
+    height: auto;
+  }
 }
 
 .tech {
-  flex: 1 1 300px;  // Allow columns to grow but not shrink below 300px
   margin: 10px;
+  flex: 1 1 0;
+  h2, h3 {
+    font-weight: 400;
+  }
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
 }
 
 .user-details {
   text-align: center;
   margin: 5px auto;
-}
-
-.avatar {
-  text-align: center;
-  margin: 10px auto;
-   img {
-        max-width: 320px;
-        max-height: 320px;
-        border-radius: 25%;
-    }
-}
-
-.icons {
-  display: flex;
-  justify-content: center; // Center the icons within the div
-  gap: 10px;  // Add space between icons
-  
-  img, i {
-    max-width: 100%;  // Ensure icons or images don’t overflow their containers
-    height: auto;  // Maintain aspect ratio
+  h1 {
+    font-weight: 400;
   }
 }
