@@ -25,9 +25,10 @@
 
 .tech {
   margin: 10px;
-  flex-grow: 1;  // Ensure equal space distribution
-  flex-basis: 0;  // Allow flex-grow to determine the width
-  max-width: 300px;  // Set a maximum width for each column
+  flex-grow: 1;  
+  flex-basis: 0;  
+  max-width: 400px;  // Increase max-width to allow more flexibility
+  min-width: 280px;  // Set a minimum width to avoid overly small columns
   h2, h3 {
     font-weight: 400;
   }
