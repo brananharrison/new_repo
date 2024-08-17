@@ -12,7 +12,7 @@ email: brananrharrison [at] gmail.com
 twitter_username: ""
 github_username:  brananharrison
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'node_modules']
 
 # Automatic SCSS processings
 sass:
