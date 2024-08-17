@@ -13,3 +13,7 @@ twitter_username: ""
 github_username:  brananharrison
 
 exclude: ['package.json', 'src' , 'node_modules']
+
+# Automatic SCSS processing
+sass:
+  style: compressed
