@@ -7,27 +7,29 @@
   }
 }
 
-.tech {
-  margin: 10px;
-  flex: 1 1 0;
-  h2, h3 {
-    font-weight: 400;
-  }
-}
-
 .user {
   text-align: center;
-  font-size: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;  // Add space between columns
   p {
     font-size: 16px;
   }
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
     font-size: 75px;
+  }
+}
+
+.tech {
+  margin: 10px;
+  flex: 1 1 30%;  // Each column takes up 30% of the width, allowing for 3 columns
+  min-width: 280px;  // Ensure columns don't get too small on smaller screens
+  max-width: 320px;  // Optional, to control max width of columns
+  h2, h3 {
+    font-weight: 400;
   }
 }
 
