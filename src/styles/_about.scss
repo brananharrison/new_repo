@@ -8,30 +8,15 @@
 }
 
 .user {
-  text-align: center;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; // Add space between columns
-  p {
-    font-size: 16px;
-  }
-  @media only screen and (min-width: $cut) {
-    flex-wrap: nowrap;
-    font-size: 75px;
-  }
+  flex-wrap: wrap;  // Allow columns to wrap on smaller screens
+  justify-content: space-between;  // Distribute space evenly between columns
+  gap: 20px;  // Space between columns
 }
 
 .tech {
+  flex: 1 1 300px;  // Allow columns to grow but not shrink below 300px
   margin: 10px;
-  flex-grow: 1;  
-  flex-basis: 0;  
-  max-width: 400px;  // Increase max-width to allow more flexibility
-  min-width: 380px;  // Set a minimum width to avoid overly small columns
-  h2, h3 {
-    font-weight: 400;
-  }
 }
 
 .user-details {
