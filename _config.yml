@@ -17,3 +17,5 @@ exclude: ['package.json', 'src' , 'node_modules']
 # Automatic SCSS processing
 sass:
   style: compressed
+  sass_dir: src/styles
+  css_dir: assets/css
