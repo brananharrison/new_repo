@@ -13,7 +13,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;  // Add space between columns
+  gap: 20px; // Add space between columns
   p {
     font-size: 16px;
   }
@@ -25,9 +25,9 @@
 
 .tech {
   margin: 10px;
-  flex: 1 1 30%;  // Each column takes up 30% of the width, allowing for 3 columns
-  min-width: 280px;  // Ensure columns don't get too small on smaller screens
-  max-width: 320px;  // Optional, to control max width of columns
+  flex-grow: 1;  // Ensure equal space distribution
+  flex-basis: 0;  // Allow flex-grow to determine the width
+  max-width: 300px;  // Set a maximum width for each column
   h2, h3 {
     font-weight: 400;
   }
