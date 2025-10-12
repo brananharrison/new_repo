@@ -3,13 +3,30 @@
   
   width: 93%;
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1200px;
   @media only screen and (min-width: $cut) {
-    width: 83%;
+    width: 88%;
   }
   svg {
     width: 60px !important;
     height: auto;
+  }
+}
+
+.avatar {
+  text-align: center;
+  margin: 20px auto;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid $sec;
+    display: block;
+    margin: 0 auto;
+    @media only screen and (min-width: $cut) {
+      width: 250px;
+      height: 250px;
+    }
   }
 }
 
